@@ -1,0 +1,145 @@
+/* Dropdown Button */
+.dropbtn {
+    background-color: black;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+    background-color: gray;
+}
+
+/* Dropdown Button End */
+
+/*animation*/
+
+.j {
+    position :relative;
+    -webkit-animation: mymove 5s ease-out;
+    animation: mymove 2s linear 2s infinite alternate;
+    color: gray;
+    font-size: 100px
+}
+
+.u {
+    position :relative;
+    -webkit-animation: mymove 5s ease-out;
+    animation: mymove 3s linear 2s infinite alternate;
+    color: gray;
+    font-size: 100px
+}
+
+.m {
+    position :relative;
+    -webkit-animation: mymove 5s ease-out;
+    animation: mymove 4s linear 2s infinite alternate;
+    color: gray;
+    font-size: 100px
+}
+
+.p {
+    position :relative;
+    -webkit-animation: mymove .01s ease-out;
+    animation: mymove 5s linear 2s infinite alternate;
+    color: gray;
+    font-size: 100px
+}
+
+@keyframes mymove {
+    0%   {top: 0px;}
+    25%  {top: 200px;}
+    75%  {top: 50px}
+    100% {top: 100px;}
+}
+
+div .class-jump {
+    text-align: center;
+    margin: auto;
+}
+
+i {
+  -webkit-animation: mymove .01s ease-out;
+  animation: mymove 5s linear 2s infinite alternate;
+  color: gray;
+  font-style: normal;
+}
+
+/*animation-end*/
+
+/*sprite*/
+
+.naruto {
+    width: 86px;
+    height: 135.1px;
+    background-image: url("images/naruto1.jpg");
+    -webkit-animation: play 1s steps(5) infinite;
+}
+
+@-webkit-keyframes play {
+  0% { background-position:    0px; }
+  80% { background-position: -430px; }
+  81% { background-position:    0px; }
+  100% { background-position:   0px; }
+}
+
+/*sprite-end*/
+
+/*transition*/
+
+div:hover .spin {
+    -webkit-transform: rotate(360deg); /* Safari */
+    transform: rotate(360deg);
+}
+.spin {
+  -webkit-transition: width 2s, height 2s, -webkit-transform 2s;
+  transition: width 2s, height 2s, transform 2s;
+  color: gray;
+  font-size: 170px;
+  padding: 100px;
+}
+
+/*transition-end*/
+
+/*divcenter*/
+.center {
+  margin: auto;
+  width: 33%;
+  padding: 50px;
+}
+/*divcenter*/

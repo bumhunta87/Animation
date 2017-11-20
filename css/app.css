@@ -143,3 +143,7 @@ div:hover .spin {
   padding: 50px;
 }
 /*divcenter*/
+
+h1 {
+  text-align:center
+}

@@ -145,5 +145,6 @@ div:hover .spin {
 /*divcenter*/
 
 h1 {
-  text-align:center
+  text-align:center;
+  font-size: 60px;
 }
